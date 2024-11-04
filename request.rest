@@ -12,7 +12,7 @@ Authorization: eyJhbGciOiJIUzI1NiJ9.MQ.zlQs2k9ic6fMkiRbcfd_m5FuFbZl2MspgEDwnr8jt
 ###
 POST {{Host}}/api/events
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiJ9.MQ.zlQs2k9ic6fMkiRbcfd_m5FuFbZl2MspgEDwnr8jt1Y
+Authorization: eyJhbGciOiJIUzI1NiJ9.MQ.zlQs2k9ic6fMkiRbcfd_m5FuFbZl2MspgEDwnr8jt1Y5
 
 {
     "name": "torneo tenis",
