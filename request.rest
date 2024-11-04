@@ -1,0 +1,71 @@
+@Host = http://localhost:3400 
+@token=eyJhbGciOiJIUzI1NiJ9.UGVwaXRv.8pBcqbPowZTWoKRBGbOfHLb0CD9IZGhPAoxxVBx9AHQ
+
+###
+GET {{Host}}/api/events
+Authorization: eyJhbGciOiJIUzI1NiJ9.MQ.zlQs2k9ic6fMkiRbcfd_m5FuFbZl2MspgEDwnr8jt1Y
+
+###
+GET {{Host}}/api/events/107
+Authorization: eyJhbGciOiJIUzI1NiJ9.MQ.zlQs2k9ic6fMkiRbcfd_m5FuFbZl2MspgEDwnr8jt1Y
+
+###
+POST {{Host}}/api/events
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.MQ.zlQs2k9ic6fMkiRbcfd_m5FuFbZl2MspgEDwnr8jt1Y
+
+{
+    "name": "torneo tenis",
+    "description": "torneo individual de tenis",
+    "date": "2024-05-05",
+    "ubication": "Málaga",
+    "typesport": "tenis",
+    "organizator": "Nike"
+}
+
+###
+PUT {{Host}}/api/events/107
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.MQ.zlQs2k9ic6fMkiRbcfd_m5FuFbZl2MspgEDwnr8jt1Y
+
+{
+    "name": "torneo tenis",
+    "description": "torneo individual de tenis",
+    "date": "2024-05-05",
+    "ubication": "Málaga",
+    "typesport": "tenis",
+    "organizator": "Nike"
+}
+
+###
+DELETE {{Host}}/api/events/108
+Authorization: eyJhbGciOiJIUzI1NiJ9.MQ.zlQs2k9ic6fMkiRbcfd_m5FuFbZl2MspgEDwnr8jt1Y
+
+###
+GET {{Host}}/api/events/upcoming
+
+###
+GET {{Host}}/api/events?type=Atletismo
+
+###
+GET {{Host}}/api/events/date?from=2024-01-10&to=2024-02-20
+
+###
+POST {{Host}}/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Monchi",
+    "password": "654321"
+}
+
+###
+POST {{Host}}/api/users/login
+Content-Type: application/json
+
+{
+    "username": "Pepito",
+    "password": "123456"
+}
+
+###
